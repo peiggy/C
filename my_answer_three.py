@@ -1,8 +1,4 @@
-#简述with方法处理文件帮了我们做了什么
-f=open("./1.txt","wb")
-try:
-    f.write("hello world")
-except:
-    pass
-finally:
-    f.close()
+#列表推导式求所有奇数并构造新列表a=[1,2,3,4,5,6,7,8,9,10]
+a=[1,2,3,4,5,6,7,8,9,10]
+res=[i for i in a if i%2==1]
+print(res)
