@@ -1,3 +1,9 @@
-#a = " hehheh ",去除收尾空格
-a=" hehheh "
-a.strip()
+#生成一个随机函数
+def fn():
+    try:
+        for i in range(5):
+            if i>2:
+                raise Exception("数字大于2了")
+    except Exception as ret:
+        print(ret)
+fn()
